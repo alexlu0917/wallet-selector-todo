@@ -1,0 +1,20 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    # update to your web root
+    destination: /home/ubuntu/Sites/admin-portal
+
+hooks:
+  BeforeInstall:
+    - location: scripts/before-install.sh
+      timeout: 300
+      runas: ubuntu
+  AfterInstall:
+    - location: scripts/after-install.sh
+      timeout: 300
+      runas: ubuntu
+  ApplicationStart:
+    - location: scripts/application-start.sh
+      timeout: 3000
+      runas: ubuntu
