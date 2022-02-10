@@ -1,15 +1,86 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 @import "~bootstrap/scss/bootstrap";
+
+.main-container {
+  max-width: 1440;
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  background-color: #eaeaea;
+  font-family: fangsong;
+}
+
+.wallet-connector {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-card {
+  border-radius: 15px;
+  box-shadow: #efefef 0px 10px 10px 0px;
+  background: white;
+  padding: 15px;
+}
+
+.select-wallet {
+  display: flex;
+  align-items: center;
+
+  & span {
+    padding: 15px;
+    border-radius: 29px;
+    background-color: #eaeaea;
+  }
+
+  & img {
+    width: 30px;
+    height: 30px;
+  }
+
+  & h2 {
+    margin-left: 15px;
+  }
+}
+
+.col {
+  font-size: 20px;
+  margin: 15px;
+
+  & span {
+    padding: 15px;
+    border-radius: 15px;
+
+    & img {
+      width: 48px;
+      height: 48px;
+    }
+  }
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.rounded-border {
+  color: #4b90e2;
+  border: 1px solid;
+  font-size: 24px;
+  border-radius: 30px;
+  font-weight: 600;
+}
