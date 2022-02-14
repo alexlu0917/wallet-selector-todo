@@ -19,7 +19,8 @@ const RPC_URLS = {
 };
 
 export const injected = new InjectedConnector({
-  supportedChainIds: [1, 3, 4, 5, 42]
+  // mainnet, rinkeby. kovan
+  supportedChainIds: [1, 4, 42]
 });
 
 // export const network = new NetworkConnector({

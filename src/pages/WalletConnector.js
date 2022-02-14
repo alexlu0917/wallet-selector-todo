@@ -1,5 +1,5 @@
 import React from "react";
-import { injected, frame, trezor } from "../utils/connector";
+import { injected, frame } from "../utils/connector";
 import bagIcon from "../assets/icon/bag_icon.png";
 import metamaskIcon from "../assets/icon/metamask_icon.png";
 import trezerIcon from "../assets/icon/Trezer.png";
@@ -23,8 +23,8 @@ const WalletConnector = () => {
           <h3>Please Select a wallet to connect to this dapp:</h3>
           <div className="wallet-container">
             <div className="row">
-                <WalletButton icon={metamaskIcon} walletName='MetaMask' />
-                <WalletButton icon={frameIcon} walletName='Frame' />
+                <WalletButton icon={metamaskIcon} walletName='MetaMask' connector={injected} />
+                <WalletButton icon={frameIcon} walletName='Frame' connector={frame}/>
             </div>
             <div className="row">
                 <WalletButton icon={trezerIcon} walletName='Trezer' />
